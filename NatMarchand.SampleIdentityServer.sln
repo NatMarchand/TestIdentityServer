@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NatMarchand.SampleIdentityServer.WebApp", "src\NatMarchand.SampleIdentityServer.WebApp\NatMarchand.SampleIdentityServer.WebApp.csproj", "{8B84048E-1E23-4A5E-886F-A5E2E2EABD4E}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "NatMarchand.SampleIdentityServer.Database", "src\NatMarchand.SampleIdentityServer.Database\NatMarchand.SampleIdentityServer.Database.sqlproj", "{C433A3BE-6BA9-4424-BD05-3F148663B60D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B84048E-1E23-4A5E-886F-A5E2E2EABD4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B84048E-1E23-4A5E-886F-A5E2E2EABD4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B84048E-1E23-4A5E-886F-A5E2E2EABD4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B84048E-1E23-4A5E-886F-A5E2E2EABD4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C433A3BE-6BA9-4424-BD05-3F148663B60D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C433A3BE-6BA9-4424-BD05-3F148663B60D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C433A3BE-6BA9-4424-BD05-3F148663B60D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C433A3BE-6BA9-4424-BD05-3F148663B60D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C433A3BE-6BA9-4424-BD05-3F148663B60D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C433A3BE-6BA9-4424-BD05-3F148663B60D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
