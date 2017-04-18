@@ -1,0 +1,6 @@
+﻿CREATE PROCEDURE [dbo].[GetGrantByKey]
+	@Key NVARCHAR(255)
+AS
+BEGIN
+	SELECT TOP 1 * FROM [Grants] WHERE [Key] = @Key
+END

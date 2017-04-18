@@ -1,0 +1,11 @@
+﻿CREATE TABLE [dbo].[TokenIssuedLogs]
+(
+	[UserId] UNIQUEIDENTIFIER NOT NULL,
+	[ClientId] NVARCHAR(255) NOT NULL,
+	[Timestamp] DATETIMEOFFSET(7) NOT NULL,
+	[IpAddress] NVARCHAR(40)NOT NULL,
+	[Scopes] NVARCHAR(MAX) NOT NULL
+
+	CONSTRAINT [PK_TokenIssuedLogs] PRIMARY KEY CLUSTERED ([UserId], [ClientId], [Timestamp]), 
+    CONSTRAINT [FK_TokenIssuedLogs_Users] FOREIGN KEY ([UserId]) REFERENCES [Users]([Id]) ON UPDATE CASCADE ON DELETE CASCADE
+)

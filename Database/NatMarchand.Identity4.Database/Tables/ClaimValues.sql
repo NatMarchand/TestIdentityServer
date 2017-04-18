@@ -1,0 +1,10 @@
+﻿CREATE TABLE [dbo].[ClaimValues]
+(
+	[UserId] UNIQUEIDENTIFIER NOT NULL,
+	[ClaimTypeId] INT NOT NULL,
+	[Value] NVARCHAR(255) NOT NULL,
+	[Timestamp] ROWVERSION       NOT NULL,
+    CONSTRAINT [PK_ClaimValues] PRIMARY KEY ([UserId], [ClaimTypeId]), 
+    CONSTRAINT [FK_ClaimValues_Users] FOREIGN KEY ([UserId]) REFERENCES [Users]([Id]) ON UPDATE CASCADE ON DELETE CASCADE,
+	CONSTRAINT [FK_ClaimValues_ClaimTypes] FOREIGN KEY ([ClaimTypeId]) REFERENCES [ClaimTypes]([Id]) ON UPDATE CASCADE ON DELETE CASCADE
+)

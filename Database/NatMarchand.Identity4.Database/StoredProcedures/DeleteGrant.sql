@@ -1,0 +1,7 @@
+﻿CREATE PROCEDURE [dbo].[DeleteGrant]
+	@Key NVARCHAR(255)
+AS
+BEGIN
+	DELETE FROM [Grants] WHERE [Key] = @Key
+	RETURN @@ROWCOUNT
+END
